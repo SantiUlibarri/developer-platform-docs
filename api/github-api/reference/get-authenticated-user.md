@@ -26,9 +26,10 @@ Returns profile information for the authenticated GitHub user.
 ```powershell
 curl.exe -H "Authorization: Bearer $env:GITHUB_TOKEN" `
   -H "X-GitHub-Api-Version: 2022-11-28" `
-  https://api.github.com/user```
-
-## Example response (PowerShell)
+  https://api.github.com/user
+```
+## Example response
+```
 {
   "login": "SantiUlibarri",
   "id": 251346436,
@@ -37,10 +38,11 @@ curl.exe -H "Authorization: Bearer $env:GITHUB_TOKEN" `
   "name": "Santiago Fernandez Ulibarri",
   "location": "Madrid"
 }
-
+```
 ## Errors
 
 | Status code | Meaning      | Description                                                                            |
 | ----------- | ------------ | -------------------------------------------------------------------------------------- |
 | 401         | Unauthorized | The request is missing a valid authentication token.                                   |
 | 403         | Forbidden    | The token is valid but lacks required permissions or the rate limit has been exceeded. |
+
