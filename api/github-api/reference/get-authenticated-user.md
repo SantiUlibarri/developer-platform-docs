@@ -26,7 +26,7 @@ Returns profile information for the authenticated GitHub user.
 ```powershell
 curl.exe -H "Authorization: Bearer $env:GITHUB_TOKEN" `
   -H "X-GitHub-Api-Version: 2022-11-28" `
-  https://api.github.com/user
+  https://api.github.com/user```
 
 ## Example response (PowerShell)
 {
